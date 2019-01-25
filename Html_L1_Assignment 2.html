@@ -1,0 +1,104 @@
+<h1><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Xena Events
+</title>
+
+<style>
+
+            .container
+            {
+                border: 2px solid black;
+                border-radius: 20px;
+                height: 70%;
+                width: 24%;
+                top: 25%;
+                left: 38%;
+                position: absolute;
+            }
+            .table
+            {
+                top: 20%;
+                left: 10%;
+                height: 40%;
+                width: 100%;
+                position: absolute;
+            }
+            h1
+            {
+                text-align: center;
+            }
+            .submit
+            {
+                background: white;
+                top: 65%;
+                left: 20%;
+                display: block;
+                margin: 8px 0;
+                height: 8%;
+                width: 60%;
+                border-radius: 10px;
+                position: absolute;
+                border: 2px solid aqua;
+                cursor: pointer;
+            }
+            img
+            {
+                height: 60px;
+                width: 60px;
+                left: 47%;
+                top:8%;
+                position: absolute;
+            }
+        
+
+</style>
+</head>
+
+<body>
+
+<h1 style="font: 40px verdana"><b>XENA EVENTS</b></h2>
+        <img src="xena.jpg" alt="Xena Events">
+        <div class="container">
+                <form action="" method="post">
+               
+              
+                    <table class="table">
+     
+                        <tbody>
+                            <tr>
+                                <td><label><b>Name:</b></label></td>
+                                <td><input type="text" name="user" placeholder="Name.." pattern="^[A-Za-z]*" required></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><label><b>Age:</b></label></td>
+                                <td><input type="number" name="age" min="18"  placeholder="Age.." required></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><label><b>Email ID:</b></label></td>
+                                <td><input type="email" name="emailaddress" placeholder="Email ID" required></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><label><b>City:</b></label></td>
+                                <td><input list="city" placeholder="City.." required>
+                                    <datalist id="city">
+                                        <option value="Rajkot">
+                                        <option value="Vizag">
+                                        <option value="Bangalore">
+                                    </datalist>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" name="submit" value="submit" class="submit">
+                   
+                </form>
+            </div>
+</body>
+</html>
+</h1>
